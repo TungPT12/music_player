@@ -6,6 +6,7 @@ let play = document.querySelector(".fa-play-circle");
 var playSong = (classSong, imgLink, nameSong) => {
   let elementNameSong = document.querySelector(`.${classSong}`)
   elementNameSong.onclick = () => {
+    img.style.animationPlayState = 'running';
     img.src = imgLink;
     audio.src = `./assets/tracks/${nameSong}.mp3`
     play.classList.add('display-none')
@@ -14,7 +15,7 @@ var playSong = (classSong, imgLink, nameSong) => {
   }
 }
 
-playSong('track1', 'https://cdn.hmmagazine.com/wp-content/uploads/2015/03/hawk-nelson-web.jpg', 'SoldOut')
+playSong('track1', 'https://avatar-ex-swe.nixcdn.com/singer/avatar/2016/04/28/9/a/5/b/1461818138466.jpg', 'SoldOut')
 playSong('track2', 'https://i.ytimg.com/vi/4yI_sl_WvnU/maxresdefault.jpg', 'Unstoppable')
 playSong('track3', 'https://image-us.24h.com.vn/upload/4-2022/images/2022-11-03/mono-4-1667456729-835-width660height444.jpg', 'WaitingForYou')
 playSong('track4', 'https://i.ytimg.com/vi/red9YvYlPWg/maxresdefault.jpg', 'Cuối_Cùng_Thì')

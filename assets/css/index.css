@@ -30,6 +30,8 @@
     width: 50%;
     border-radius: 221px;
     height: 180px;
+    animation: around 3s infinite linear;
+    animation-play-state: paused;
 
  }
 
@@ -63,9 +65,9 @@ i.fa.fa-play-circle.display-none {
     /* transition: all 10s linear; */
     /* margin-bottom: 20px; */
     /* animation-play-state: paused; */
-/* @keyframes around {
+@keyframes around {
     0%  {transform:rotate(0deg);}
     50%  {transform:rotate(180deg);}
     100%  {transform:rotate(360deg);}
-} */
+}
 /*//////////////////////////////////*/
