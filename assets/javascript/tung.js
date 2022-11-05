@@ -3,7 +3,29 @@ let img = document.querySelector('.header_img');
 let pause = document.querySelector(".fa-pause-circle");
 let play = document.querySelector(".fa-play-circle");
 let nowPlayingSong = document.querySelector('.header_name--song')
+let music = [
+  {
+    img: 'https://avatar-ex-swe.nixcdn.com/singer/avatar/2016/04/28/9/a/5/b/1461818138466.jpg',
+    name: 'Sold Out',
+    song: 'SoldOut'
 
+  },
+  {
+    img: 'https://i.ytimg.com/vi/4yI_sl_WvnU/maxresdefault.jpg',
+    name: 'Unstoppable',
+    song: 'Unstoppable'
+  },
+  {
+    img: 'https://image-us.24h.com.vn/upload/4-2022/images/2022-11-03/mono-4-1667456729-835-width660height444.jpg',
+    name: 'WaitingForYou',
+    song: 'Waiting For You'
+  },
+  {
+    img: 'https://i.ytimg.com/vi/red9YvYlPWg/maxresdefault.jpg',
+    name: 'Cuối_Cùng_Thì',
+    song: 'Cuối Cùng Thì'
+  }
+]
 var playSong = (classSong, imgLink, nameSong, nameSongPlaying) => {
   let elementNameSong = document.querySelector(`.${classSong}`)
   elementNameSong.onclick = () => {
