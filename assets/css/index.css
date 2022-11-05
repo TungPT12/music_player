@@ -27,6 +27,7 @@
 }
 
 .header_img {
+    padding: 20px;
     width: 50%;
     border-radius: 221px;
     height: 180px;
@@ -58,6 +59,10 @@ i.fa.fa-play-circle.display-none {
     height: 400px;
     overflow-y: auto;
     
+}
+
+.header_name--song {
+
 }
 
 /*//////////////////////////////////*/

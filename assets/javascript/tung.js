@@ -2,10 +2,12 @@ let audio = document.querySelector("#audio");
 let img = document.querySelector('.header_img');
 let pause = document.querySelector(".fa-pause-circle");
 let play = document.querySelector(".fa-play-circle");
+let nowPlayingSong = document.querySelector('.header_name--song')
 
-var playSong = (classSong, imgLink, nameSong) => {
+var playSong = (classSong, imgLink, nameSong, nameSongPlaying) => {
   let elementNameSong = document.querySelector(`.${classSong}`)
   elementNameSong.onclick = () => {
+    nowPlayingSong.innerHTML = nameSongPlaying
     img.style.animationPlayState = 'running';
     img.src = imgLink;
     audio.src = `./assets/tracks/${nameSong}.mp3`
@@ -15,10 +17,10 @@ var playSong = (classSong, imgLink, nameSong) => {
   }
 }
 
-playSong('track1', 'https://avatar-ex-swe.nixcdn.com/singer/avatar/2016/04/28/9/a/5/b/1461818138466.jpg', 'SoldOut')
-playSong('track2', 'https://i.ytimg.com/vi/4yI_sl_WvnU/maxresdefault.jpg', 'Unstoppable')
-playSong('track3', 'https://image-us.24h.com.vn/upload/4-2022/images/2022-11-03/mono-4-1667456729-835-width660height444.jpg', 'WaitingForYou')
-playSong('track4', 'https://i.ytimg.com/vi/red9YvYlPWg/maxresdefault.jpg', 'Cuối_Cùng_Thì')
+playSong('track1', 'https://avatar-ex-swe.nixcdn.com/singer/avatar/2016/04/28/9/a/5/b/1461818138466.jpg', 'SoldOut', 'Sold Out')
+playSong('track2', 'https://i.ytimg.com/vi/4yI_sl_WvnU/maxresdefault.jpg', 'Unstoppable', 'Unstoppable')
+playSong('track3', 'https://image-us.24h.com.vn/upload/4-2022/images/2022-11-03/mono-4-1667456729-835-width660height444.jpg', 'WaitingForYou', 'Waiting For You')
+playSong('track4', 'https://i.ytimg.com/vi/red9YvYlPWg/maxresdefault.jpg', 'Cuối_Cùng_Thì', 'Cuối Cùng Thì')
 
 
 
