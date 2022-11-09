@@ -32,6 +32,20 @@ let musics = [
     song: 'Cuối_Cùng_Thì',
     singer: 'Jack',
     time: '3:40'
+  },
+  {
+    img: 'https://i.ytimg.com/vi/mndnRdcsZaw/maxresdefault.jpg',
+    name: 'Nhìn Mây Vẽ Người',
+    song: 'NhìnMâyVẽNgười',
+    singer: 'Hương Ly ft Jombie G5R  ',
+    time: '3:44'
+  },
+  {
+    img: 'https://i.ytimg.com/vi/GMyF41IxReo/maxresdefault.jpg',
+    name: 'Khuê Mộc Lang',
+    song: 'KhuêMộcLang',
+    singer: 'Hương Ly ft Jombie G5R',
+    time: '3:35'
   }
 ]
 var playSong = (track, imgLink, nameSong, nameSongPlaying) => {
