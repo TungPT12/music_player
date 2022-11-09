@@ -58,11 +58,46 @@ i.fa.fa-play-circle.display-none {
     margin-top: 20px;
     height: 400px;
     overflow-y: auto;
-    
+    /* opacity: ; */
 }
 
-.header_name--song {
+.track {
+    max-width: 100%;
+    height: 60px;
+    background-color: #AAAAAA		;
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    /* justify-content: space-around; */
+    
+}
+.track:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 
+img.track__img {
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 9px;
+    margin-left: 10px;
+    flex: 0;
+}
+
+.track__infor {
+    flex: 1;
+    margin: 18px;
+}
+
+.track__time {
+    flex: 0;
+    margin-right: 10px;
+    font-size: 13px;
+    opacity: 0.7;
 }
 
 /*//////////////////////////////////*/
