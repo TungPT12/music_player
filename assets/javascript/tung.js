@@ -29,7 +29,7 @@ let musics = [
   {
     img: 'https://i.ytimg.com/vi/red9YvYlPWg/maxresdefault.jpg',
     name: 'Cuối Cùng Thì',
-    song: 'Cuối_Cùng_Thì',
+    song: 'CuốiCùngThì',
     singer: 'Jack',
     time: '3:40'
   },
@@ -52,7 +52,7 @@ let musics = [
     name: 'Hoạ Mây',
     song: 'HoạMây',
     singer: 'X2X Band ft DinhLong',
-    time: '3:35'
+    time: '4:18'
   }
 ]
 var playSong = (track, imgLink, nameSong, nameSongPlaying) => {
@@ -88,7 +88,7 @@ var renderSong = () => {
                     <p class="track__infor-song">${music.name}</p>
                     <p class="track__infor-singer">${music.singer}</p>
                 </div>
-                <p class="track__time">4:13</p>
+                <p class="track__time">${music.time}</p>
             </div>`
   });
   let elements = listSong.join('');
