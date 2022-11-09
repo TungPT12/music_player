@@ -26,11 +26,18 @@
     top: 10px;
 }
 
+i.fa.fa-play-circle {
+    font-size: 41px;
+    top: 0;
+    margin-top: -13px;
+}
+
 .header_img {
     padding: 20px;
-    width: 50%;
+    width: 180px;
     border-radius: 221px;
     height: 180px;
+    
     animation: around 3s infinite linear;
     animation-play-state: paused;
 
