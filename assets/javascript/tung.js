@@ -46,6 +46,13 @@ let musics = [
     song: 'KhuêMộcLang',
     singer: 'Hương Ly ft Jombie G5R',
     time: '3:35'
+  },
+  {
+    img: 'https://i.ytimg.com/vi/GMyF41IxReo/maxresdefault.jpg',
+    name: 'Hoạ Mây',
+    song: 'HoạMây',
+    singer: 'X2X Band ft DinhLong',
+    time: '3:35'
   }
 ]
 var playSong = (track, imgLink, nameSong, nameSongPlaying) => {
