@@ -48,7 +48,7 @@ let musics = [
     time: '3:35'
   },
   {
-    img: 'https://i.ytimg.com/vi/GMyF41IxReo/maxresdefault.jpg',
+    img: 'https://i.ytimg.com/vi/ALKduCWFuyU/maxresdefault.jpg',
     name: 'Hoạ Mây',
     song: 'HoạMây',
     singer: 'X2X Band ft DinhLong',
